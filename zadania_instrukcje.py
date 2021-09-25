@@ -200,3 +200,51 @@ while j < numer and liczba1 <= numer:
     else: break
 print(B) 
 '''
+
+#Słowniki
+
+#Zadanie 1
+'''
+zespoły = {'The Sensual World' : 'Kate Bush', 'Shaday' : 'Ofra Haza',
+'Achtung Baby' : 'U2', 'Aion' : 'Dead Can Dance', 'Invisible Touch' : 'Genesis'}
+print(zespoły.keys())
+
+wartość = input('Podaj nazwę albumu: ')
+dane = zespoły.get(wartość)
+if dane:
+    print('Wykonawcą albumu', wartość, 'jest', dane)
+else: print('Brak danych')
+'''
+
+#Zadanie 2
+'''
+zespoły = {'The Sensual World' : 'Kate Bush', 'Shaday' : 'Ofra Haza',
+'Achtung Baby' : 'U2', 'Aion' : 'Dead Can Dance', 'Invisible Touch' : 'Genesis'}
+print(zespoły.keys())
+
+user = input('Czy chcesz dodać album i zespół? (y/n)')
+if user == 'y':
+    zespół = input('Zespół: ')
+    album = input ('Album: ')
+    dodanie = zespoły.update({zespół : album})
+    print(zespoły)
+else: print('')
+print('Może chcesz jakiś usunąć?(y/n)')
+user2 = input()
+
+if user2 == 'y':
+    print('Wpisz nazwę zespołu, bądź albumu, by usunąć parę')
+    usuwanie = input()
+    zespoły.pop(usuwanie)
+else: print('Do widzenia!')
+print(zespoły)
+'''
+
+#Zadanie 3
+'''
+tekst = {'Once' : 1, 'upon' : 1 , 'a' : 3, 'midnight' : 1, 'dreary' : 1, 'while' : 2, 'I' : 3, 'pondered' : 1, 'weak' : 1, 'and' : 3, 'weary' : 1,
+'Over' : 1, 'many' : 1, 'quaint' : 1, 'curious' : 1, 'volume' : 1, 'of' : 2, 'forgotten' : 1, 'love' : 1, 'nodded' : 1, 'nearly' : 1, 'napping' : 1,
+'suddenly' : 1, 'there' : 1, 'came' : 1, 'tapping' : 2, 'As' : 1, 'someone' : 1, 'gently' : 1, 'rapping' : 2, 'at' : 2, 'my' : 2, 'chamber' : 1, 'door' : 1,
+'Only' : 1, 'nothing' : 1, 'more' : 1}
+'''
+
