@@ -248,3 +248,118 @@ tekst = {'Once' : 1, 'upon' : 1 , 'a' : 3, 'midnight' : 1, 'dreary' : 1, 'while'
 'Only' : 1, 'nothing' : 1, 'more' : 1}
 '''
 
+#Listy
+
+#Zadanie 1
+'''
+zdanie = input('Podaj zdanie: ')
+
+
+znaki = ['.', ',', ':', ';', '!', '?']
+
+for i in zdanie:
+    if i in znaki:
+        zdanie = zdanie.replace(i, '')
+zdanie1 = zdanie.split()
+zdanie2 = zdanie1.reverse()
+print(zdanie)
+print(zdanie1)
+'''
+
+#Zadanie 2
+'''
+import random
+
+wynik = [12, 1, 45, 76, 50, 23]
+liczby = []
+
+
+i = 0
+while i < 5:
+    losowo = random.randint(1,49)
+    liczby.append(losowo)
+    i += 1
+else: print('')
+print(liczby)
+
+j = 0
+
+while j < 50:
+    wartosc = wynik.index(1)
+    #print(wartosc)  
+    wartosc += 1
+    j += 1 
+print(wynik)
+print(wartosc)
+'''
+#Niedokończone, nie wiem jak znaleźć liczby w liście i je podmienic gdy nie spełniają warunków
+
+#Zadanie 3
+'''
+lista1 = ['abc', 'def', 'ghi', 'jkl']
+lista2 = [1, 2, 3, 4, 5]
+lista3 = ['xyz', 1, '2']
+
+print(lista1, lista2, lista3)
+print(lista1[0], lista1[3])
+
+lista2[1] = lista3[1]
+print(lista2)
+
+lista3[2] = input('Podaj wartość: ')
+print(lista3)
+
+lista1.append('słowo')
+print(lista1)
+
+del lista1[2]
+print(lista1)
+
+len(lista3)
+
+lista1 = lista1 + lista3
+print(lista1)
+'''
+
+#Zadanie 4
+'''
+imię = input('Podaj imie znajomego: ')
+print('Witaj', imię)
+
+
+
+imiona = []
+podanie = input('Podaj imiona ')
+podanie1 = podanie.split()
+imiona.append(podanie1)
+
+print(imiona[1])
+'''
+
+#Zadanie 5
+'''
+zdanie = input('Podaj zdanie: ')
+zdanie1 = zdanie.split()
+
+znaki = ['.', ',', ':', ';', '!', '?']
+
+for i in zdanie:
+    if i in znaki:
+        zdanie = zdanie.replace(i, '')
+
+
+print(len(zdanie1))
+
+if 'i ' in zdanie:
+    print('Wyraz zawiera "i"')
+elif 'w ' in zdanie:
+    print('Wyraz zawiera "w"')
+elif 'na ' in zdanie:
+    print('Wyraz zawiera "na"')  
+elif 'pod ' in zdanie:
+    print('Wyraz zawiera "pod"') 
+elif 'dla ' in zdanie:
+    print('Wyraz zawiera "dla"')
+else: print('Nie zawiera')
+'''
+#nie wiem jak sprawdzic index słowa gdy sprawdzi czy ono sie znajduje i jak zrobic to równoczesnie dla wszystkich wyrazów zeby pokazywało który konkretnie sie zawiera 
